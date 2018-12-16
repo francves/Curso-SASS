@@ -1,0 +1,41 @@
+/*--------------------
+    $LAYOUT
+---------------------*/
+
+section{
+    @include max-width;
+    background-color: blue;
+    @include respond-to(800px){
+        background-color: $color-error;
+    }
+    background-color: $color-lightgrey;
+    padding: $padding
+}
+.max-width--huge{
+    @include max-width(1200px);
+}
+
+header{
+    background-color: $color-brand;
+}
+
+%texto{
+    color: $color-info;
+    font-weight: bold;
+}
+
+#parrafo1{
+    @extend %texto;
+}
+
+#parrafo2{
+    @extend %texto;
+}
+
+#parrafo3{
+    @extend %texto;
+}
+//Llamando la función
+div{
+    padding: suma(10px, 5px)
+}

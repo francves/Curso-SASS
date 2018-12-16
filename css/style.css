@@ -1,0 +1,125 @@
+@charset "UTF-8";
+/*--------------------
+    $COLORS
+---------------------*/
+/**
+* Branding Colors
+*/
+/*--------------------
+    $MIXINS
+---------------------*/
+/*--------------------
+    $FUNCIONES
+---------------------*/
+/*--------------------
+    $DIRECTIVAS
+---------------------*/
+.normal {
+  font-weight: normal; }
+
+.bold {
+  font-weight: bold; }
+
+.italic {
+  font-weight: italic; }
+
+.left {
+  text-align: left; }
+
+.center {
+  text-align: center; }
+
+.right {
+  text-align: right; }
+
+.class-1:before {
+  content: "1"; }
+
+.class-2:before {
+  content: "2"; }
+
+.class-3:before {
+  content: "3"; }
+
+.class-4:before {
+  content: "4"; }
+
+div {
+  background-color: aquamarine; }
+
+/*--------------------
+    $TABLAS
+---------------------*/
+table tr:hover {
+  background-color: #dbd879; }
+
+/*--------------------
+    $BOTONES
+---------------------*/
+/* Acerca de BEM (Block element modifier
+.Block {
+	&__Element {
+
+		&--Modifier {
+
+		}
+	}
+}
+*El & Toma el valor o nombre del elemento padre, por lo que el 
+*resultado para &__Element sería Block__Element. Similarmente 
+*para &--Modifier
+*/
+.btn {
+  display: inline-block;
+  color: white;
+  background-color: #ea83ee;
+  line-height: 2.5;
+  border-radius: 3px;
+  font-size: 24px; }
+  .btn .btn__icon {
+    font-size: .6em; }
+  .btn .btn--info {
+    background-color: #42b8dd; }
+
+/*--------------------
+    $LINKS
+---------------------*/
+/*--------------------
+    $TIPOGRAFIA
+---------------------*/
+p {
+  font-size: 16px; }
+
+/*--------------------
+    $GRIDS
+---------------------*/
+/*--------------------
+    $LAYOUT
+---------------------*/
+section {
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid #dbd879;
+  background-color: blue;
+  background-color: #bfbfbf;
+  padding: 24px; }
+  @media only screen and (min-width: 800px) {
+    section {
+      background-color: #da4f49; } }
+
+.max-width--huge {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid #dbd879; }
+
+header {
+  background-color: #ea83ee; }
+
+#parrafo1, #parrafo2, #parrafo3 {
+  color: #42b8dd;
+  font-weight: bold; }
+
+div {
+  padding: 15px; }

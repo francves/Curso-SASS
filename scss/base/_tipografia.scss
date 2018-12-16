@@ -1,0 +1,6 @@
+/*--------------------
+    $TIPOGRAFIA
+---------------------*/
+p{
+    font-size: map-get($fs, normal); //Obteniendo el valor normal del array $fs
+}

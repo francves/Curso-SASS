@@ -1,0 +1,37 @@
+/*--------------------
+    $DIRECTIVAS
+---------------------*/
+
+// Directiva each
+@each $font in (normal, bold, italic){
+    .#{$font} {font-weight: $font;}
+}
+
+// Listas
+$text-align: left center right;
+
+@each $align in ($text-align){
+    .#{$align} {text-align: $align;}
+}
+
+// Directiva for
+@for $i from 1 to 5{
+    .class-#{$i}{
+        &:before{
+            content: "#{$i}";
+        }
+    }
+}
+
+// Directivas if y else
+$directivaIf : true;
+@if $directivaIf == true {
+    div{
+        background-color: aquamarine;
+    }
+}
+@else{
+    div{
+        background-color: white;
+    }
+}

@@ -1,0 +1,31 @@
+/*--------------------
+    $BOTONES
+---------------------*/
+/* Acerca de BEM (Block element modifier
+.Block {
+	&__Element {
+
+		&--Modifier {
+
+		}
+	}
+}
+*El & Toma el valor o nombre del elemento padre, por lo que el 
+*resultado para &__Element sería Block__Element. Similarmente 
+*para &--Modifier
+*/
+
+.btn{
+    display: inline-block;
+    color: $buttoncolor;
+    background-color: $buttonbackgroundcolor;
+    line-height: 2.5;
+    border-radius: $border-radius;
+    font-size: $buttonfontsize;
+    .btn__icon{
+        font-size: .6em;
+    }
+    .btn--info{
+        background-color: $color-info;
+    }
+}

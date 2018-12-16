@@ -1,0 +1,16 @@
+/*--------------------
+    $FUNCIONES
+---------------------*/
+
+// Funcion de prueba
+@function suma($numero-uno, $numero-dos){
+    @return $numero-uno + $numero-dos;
+}
+
+// Arrays en SASS (o mapas)
+$fs : (
+    big: 24px,
+    normal: 16px,
+    small: 14px,
+    x-small: 12px,
+);
